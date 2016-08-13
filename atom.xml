@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-13T19:44:42.650Z</updated>
+  <updated>2016-08-13T19:47:52.376Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,12 +20,14 @@
     <link href="http://yoursite.com/2016/08/10/%E4%BD%A0%E4%BD%A0%E5%A5%BD%E4%BA%B2worlda%C2%80/"/>
     <id>http://yoursite.com/2016/08/10/你你好亲worlda/</id>
     <published>2016-08-10T15:26:15.000Z</published>
-    <updated>2016-08-13T19:44:42.650Z</updated>
+    <updated>2016-08-13T19:47:52.376Z</updated>
     
     <content type="html"><![CDATA[<p>#总算是迈出第一步了</p>
 <p>##总算是迈出第一步了</p>
-<p>tags:</p>
+<p>categories: </p>
 <ul>
+<li>Sports</li>
+<li>Baseball<br>tags:</li>
 <li>hentai</li>
 </ul>
 ]]></content>
@@ -34,8 +36,10 @@
     
       &lt;p&gt;#总算是迈出第一步了&lt;/p&gt;
 &lt;p&gt;##总算是迈出第一步了&lt;/p&gt;
-&lt;p&gt;tags:&lt;/p&gt;
+&lt;p&gt;categories: &lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;Sports&lt;/li&gt;
+&lt;li&gt;Baseball&lt;br&gt;tags:&lt;/li&gt;
 &lt;li&gt;hentai&lt;/li&gt;
 &lt;/ul&gt;
 
