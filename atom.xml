@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-13T21:01:06.853Z</updated>
+  <updated>2016-08-14T18:04:00.930Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,15 +16,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>pagetags</title>
-    <link href="http://yoursite.com/2016/08/14/pagetags/"/>
-    <id>http://yoursite.com/2016/08/14/pagetags/</id>
-    <published>2016-08-13T21:01:06.000Z</published>
-    <updated>2016-08-13T21:01:06.853Z</updated>
+    <title>来一份意面！</title>
+    <link href="http://yoursite.com/2016/08/15/%E6%84%8F%E9%9D%A2/"/>
+    <id>http://yoursite.com/2016/08/15/意面/</id>
+    <published>2016-08-14T17:32:48.340Z</published>
+    <updated>2016-08-14T18:04:00.930Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/Ltalian.jpg" style="wdith: 300px;"></p>
+<h2 id="意大利面做法"><a href="#意大利面做法" class="headerlink" title="意大利面做法"></a>意大利面做法</h2><h3 id="主料"><a href="#主料" class="headerlink" title="主料"></a>主料</h3><ul>
+<li>去皮番茄/瓶装番茄酱</li>
+<li>西芹</li>
+<li>洋葱</li>
+<li>胡萝卜</li>
+<li>牛肉末（500g左右）<h3 id="配料"><a href="#配料" class="headerlink" title="配料"></a>配料</h3></li>
+<li>奶酪</li>
+<li>橄榄油</li>
+<li>牛奶<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3></li>
+<li>先将胡萝卜西芹、切丁，洋葱切碎</li>
+<li>橄榄油烧热，下洋葱炒到透明</li>
+<li>下胡萝卜和西芹炒热</li>
+<li>下牛肉碎，炒到变色</li>
+<li>加入番茄酱，拌匀，亦可加点酒去腥</li>
+<li>然后倒牛奶，边倒边拌匀</li>
+<li>盖上盖子小火煮3-4小时，中途可以加上牛奶补充汤汁</li>
+<li>酱快好的时候开始煮水，加入一定量盐和意面，5-7min</li>
+<li>拿口炒锅，将橄榄油、奶酪和意面炒匀，炒的时候可以加一勺刚刚才烧面的用的盐水来湿润</li>
+<li>炒完淋上酱汁（Ragu）就可以吃啦！</li>
+</ul>
+]]></content>
     
     <summary type="html">
     
+      &lt;p&gt;&lt;img src=&quot;/images/Ltalian.jpg&quot; style=&quot;wdith: 300px;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;意大利面做法&quot;&gt;&lt;a href=&quot;#意大利面做法&quot; class=&quot;headerlink&quot; title=&quot;意大利面做法&quot;&gt;&lt;/a&gt;意大利面做法&lt;
+    
     </summary>
+    
+      <category term="美食" scheme="http://yoursite.com/categories/%E7%BE%8E%E9%A3%9F/"/>
     
     
   </entry>
@@ -44,26 +72,6 @@
     
     
       <category term="2" scheme="http://yoursite.com/tags/2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://yoursite.com/2016/08/10/%E4%BD%A0%E4%BD%A0%E5%A5%BD%E4%BA%B2worlda%C2%80/"/>
-    <id>http://yoursite.com/2016/08/10/你你好亲worlda/</id>
-    <published>2016-08-10T15:26:15.526Z</published>
-    <updated>2016-08-13T20:36:21.977Z</updated>
-    
-    <content type="html"><![CDATA[<p>target=”_blank”</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;target=”_blank”&lt;/p&gt;
-
-    
-    </summary>
-    
     
   </entry>
   
