@@ -59,24 +59,6 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2016/08/14/fuck/"/>
-    <id>http://yoursite.com/2016/08/14/fuck/</id>
-    <published>2016-08-13T20:43:33.507Z</published>
-    <updated>2016-08-13T21:03:08.438Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="3" scheme="http://yoursite.com/categories/3/"/>
-    
-    
-      <category term="2" scheme="http://yoursite.com/tags/2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
     <link href="http://yoursite.com/2016/08/10/hello-world/"/>
     <id>http://yoursite.com/2016/08/10/hello-world/</id>
     <published>2016-08-10T14:42:23.113Z</published>
