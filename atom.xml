@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-14T18:04:00.930Z</updated>
+  <updated>2016-08-27T16:58:47.787Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>来一份意面！</title>
+    <title>分类测试文章</title>
     <link href="http://yoursite.com/2016/08/15/%E6%84%8F%E9%9D%A2/"/>
     <id>http://yoursite.com/2016/08/15/意面/</id>
     <published>2016-08-14T17:32:48.340Z</published>
-    <updated>2016-08-14T18:04:00.930Z</updated>
+    <updated>2016-08-27T16:58:47.787Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/Ltalian.jpg" style="wdith: 300px;"></p>
 <h2 id="意大利面做法"><a href="#意大利面做法" class="headerlink" title="意大利面做法"></a>意大利面做法</h2><h3 id="主料"><a href="#主料" class="headerlink" title="主料"></a>主料</h3><ul>
@@ -52,7 +52,7 @@
     
     </summary>
     
-      <category term="美食" scheme="http://yoursite.com/categories/%E7%BE%8E%E9%A3%9F/"/>
+      <category term="Testing" scheme="http://yoursite.com/categories/Testing/"/>
     
     
   </entry>
