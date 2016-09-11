@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-28T18:41:26.724Z</updated>
+  <updated>2016-09-09T18:50:09.777Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/08/28/%E8%B4%A6%E5%8D%95/"/>
     <id>http://yoursite.com/2016/08/28/账单/</id>
     <published>2016-08-27T17:48:11.283Z</published>
-    <updated>2016-08-28T18:41:26.724Z</updated>
+    <updated>2016-09-09T18:50:09.777Z</updated>
     
     <content type="html"><![CDATA[<h2 id="9月份"><a href="#9月份" class="headerlink" title="9月份"></a>9月份</h2><hr>
 <table>
@@ -33,7 +33,7 @@
 <tbody>
 <tr>
 <td>日常用品</td>
-<td>$95</td>
+<td>$100</td>
 </tr>
 <tr>
 <td>出行</td>
@@ -41,15 +41,31 @@
 </tr>
 <tr>
 <td>吃饭</td>
-<td>$27</td>
+<td>$255</td>
 </tr>
 <tr>
-<td>咖啡</td>
-<td>5.5</td>
+<td>饮料</td>
+<td>80</td>
 </tr>
 <tr>
 <td>网费</td>
-<td>20</td>
+<td>90</td>
+</tr>
+<tr>
+<td>香烟</td>
+<td>92</td>
+</tr>
+<tr>
+<td>实习伙食费</td>
+<td>132</td>
+</tr>
+<tr>
+<td>软件购买</td>
+<td>749</td>
+</tr>
+<tr>
+<td>话费</td>
+<td>50</td>
 </tr>
 </tbody>
 </table>
