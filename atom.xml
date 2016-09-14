@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-09-14T13:28:38.527Z</updated>
+  <updated>2016-09-14T13:46:59.340Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,14 +16,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>用xlrd读取excel</title>
     <link href="http://yoursite.com/2016/09/14/python_xlrd/"/>
     <id>http://yoursite.com/2016/09/14/python_xlrd/</id>
     <published>2016-09-14T11:59:49.801Z</published>
-    <updated>2016-09-14T13:28:38.527Z</updated>
+    <updated>2016-09-14T13:46:59.340Z</updated>
     
-    <content type="html"><![CDATA[<p>title:用xlrd读取excel  </p>
-<h2 id="categories-python"><a href="#categories-python" class="headerlink" title="categories:python"></a>categories:python</h2><p>python中的xlrd包可以很轻松的读取xlsx文件中的数据。<br>它的用法相当简单：</p>
+    <content type="html"><![CDATA[<p>python中的xlrd包可以很轻松的读取xlsx文件中的数据。<br>它的用法相当简单：</p>
 <pre><code>
 magnetic_excel = xlrd.open_workbook('9.13_pm.xlsx')#获取excel文件
 temp = wb.sheet_by_index(0)
@@ -38,10 +37,14 @@ magnetic_list = temp.col_values(0)
     
     <summary type="html">
     
-      &lt;p&gt;title:用xlrd读取excel  &lt;/p&gt;
-&lt;h2 id=&quot;categories-python&quot;&gt;&lt;a href=&quot;#categories-python&quot; class=&quot;headerlink&quot; title=&quot;categories:python&quot;&gt;&lt;/a&gt;categor
+      &lt;p&gt;python中的xlrd包可以很轻松的读取xlsx文件中的数据。&lt;br&gt;它的用法相当简单：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+magnetic_excel = xlrd.open_workbook(&#39;9.13_pm.xlsx&#39;)#获取excel文件
+temp = wb.she
     
     </summary>
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
     
     
   </entry>
