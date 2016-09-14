@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-09-14T13:46:59.340Z</updated>
+  <updated>2016-09-14T14:16:34.051Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,35 +16,23 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>用xlrd读取excel</title>
+    <title></title>
     <link href="http://yoursite.com/2016/09/14/python_xlrd/"/>
     <id>http://yoursite.com/2016/09/14/python_xlrd/</id>
     <published>2016-09-14T11:59:49.801Z</published>
-    <updated>2016-09-14T13:46:59.340Z</updated>
+    <updated>2016-09-14T14:16:34.051Z</updated>
     
-    <content type="html"><![CDATA[<p>python中的xlrd包可以很轻松的读取xlsx文件中的数据。<br>它的用法相当简单：</p>
-<pre><code>
-magnetic_excel = xlrd.open_workbook('9.13_pm.xlsx')#获取excel文件
-temp = wb.sheet_by_index(0)
-#通过索引方式返回该表格中的表单
-magnetic_list = temp.col_values(0)
-#获取第0列的数据，
-#也可以用temp.cell_value(rowx=29, colx=3)指定某行某列的数据
-</code></pre>
-
-
+    <content type="html"><![CDATA[<p>title:用xlrd读取excel  </p>
+<h2 id="categories-python"><a href="#categories-python" class="headerlink" title="categories:python"></a>categories:python</h2><p>python中的xlrd包可以很轻松的读取xlsx文件中的数据。<br>它的用法相当简单：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">magnetic_excel = xlrd.open_workbook(<span class="string">'9.13_pm.xlsx'</span>)<span class="comment">#获取excel文件</span></div><div class="line">temp = wb.sheet_by_index(<span class="number">0</span>)</div><div class="line"><span class="comment">#通过索引方式返回该表格中的表单</span></div><div class="line">magnetic_list = temp.col_values(<span class="number">0</span>)</div><div class="line"><span class="comment">#获取第0列的数据，</span></div><div class="line"><span class="comment">#也可以用temp.cell_value(rowx=29, colx=3)指定某行某列的数据</span></div></pre></td></tr></table></figure>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;python中的xlrd包可以很轻松的读取xlsx文件中的数据。&lt;br&gt;它的用法相当简单：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;
-magnetic_excel = xlrd.open_workbook(&#39;9.13_pm.xlsx&#39;)#获取excel文件
-temp = wb.she
+      &lt;p&gt;title:用xlrd读取excel  &lt;/p&gt;
+&lt;h2 id=&quot;categories-python&quot;&gt;&lt;a href=&quot;#categories-python&quot; class=&quot;headerlink&quot; title=&quot;categories:python&quot;&gt;&lt;/a&gt;categor
     
     </summary>
-    
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
     
     
   </entry>
