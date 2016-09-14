@@ -328,7 +328,7 @@
         
           
             <p>python中的xlrd包可以很轻松的读取xlsx文件中的数据。<br>它的用法相当简单：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">magnetic_excel = xlrd.open_workbook(<span class="string">'9.13_pm.xlsx'</span>)<span class="comment">#获取excel文件</span></div><div class="line">temp = wb.sheet_by_index(<span class="number">0</span>)</div><div class="line"><span class="comment">#通过索引方式返回该表格中的表单</span></div><div class="line">magnetic_list = temp.col_values(<span class="number">0</span>)</div><div class="line"><span class="comment">#获取第0列的数据，</span></div><div class="line"><span class="comment">#也可以用temp.cell_value(rowx=29, colx=3)指定某行某列的数据</span></div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">magnetic_excel = xlrd.open_workbook(<span class="string">'9.13_pm.xlsx'</span>)<span class="comment">#获取excel文件</span></div><div class="line">temp = wb.sheet_by_index(<span class="number">0</span>)</div><div class="line"><span class="comment">#通过索引方式返回该表格中的表单</span></div><div class="line">magnetic_list = temp.col_values(<span class="number">0</span>)</div><div class="line"><span class="comment">#获取第0列的数据，也可以用temp.cell_value(rowx=29, colx=3)指定某行某列的数据</span></div></pre></td></tr></table></figure>
 
           
         
