@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[用xlrd读取excel]]></title>
+      <url>http://yoursite.com/2016/09/14/python_xlrd/</url>
+      <content type="html"><![CDATA[<p>python中的xlrd包可以很轻松的读取xlsx文件中的数据。<br>它的用法相当简单：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">magnetic_excel = xlrd.open_workbook(<span class="string">'9.13_pm.xlsx'</span>)<span class="comment">#获取excel文件</span></div><div class="line">temp = wb.sheet_by_index(<span class="number">0</span>)</div><div class="line"><span class="comment">#通过索引方式返回该表格中的表单</span></div><div class="line">magnetic_list = temp.col_values(<span class="number">0</span>)</div><div class="line"><span class="comment">#获取第0列的数据，也可以用temp.cell_value(rowx=29, colx=3)指定某行某列的数据</span></div></pre></td></tr></table></figure>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[账单]]></title>
+      <url>http://yoursite.com/2016/08/28/%E8%B4%A6%E5%8D%95/</url>
+      <content type="html"><![CDATA[<h2 id="9月份"><a href="#9月份" class="headerlink" title="9月份"></a>9月份</h2><hr>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th>Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>日常用品</td>
+<td>$120</td>
+</tr>
+<tr>
+<td>出行</td>
+<td>$54</td>
+</tr>
+<tr>
+<td>吃饭</td>
+<td>$306</td>
+</tr>
+<tr>
+<td>饮料</td>
+<td>90</td>
+</tr>
+<tr>
+<td>网费</td>
+<td>110</td>
+</tr>
+<tr>
+<td>香烟</td>
+<td>128</td>
+</tr>
+<tr>
+<td>实习伙食费</td>
+<td>132</td>
+</tr>
+<tr>
+<td>软件购买</td>
+<td>749</td>
+</tr>
+<tr>
+<td>话费</td>
+<td>50</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[来一份意面]]></title>
+      <url>http://yoursite.com/2016/08/15/%E6%84%8F%E9%9D%A2/</url>
+      <content type="html"><![CDATA[<p><img src="/images/Ltalian.jpg" style="wdith: 300px;"></p>
+<h2 id="意大利面做法"><a href="#意大利面做法" class="headerlink" title="意大利面做法"></a>意大利面做法</h2><h3 id="主料"><a href="#主料" class="headerlink" title="主料"></a>主料</h3><ul>
+<li>去皮番茄/瓶装番茄酱</li>
+<li>西芹</li>
+<li>洋葱</li>
+<li>胡萝卜</li>
+<li>牛肉末（500g左右）<h3 id="配料"><a href="#配料" class="headerlink" title="配料"></a>配料</h3></li>
+<li>奶酪</li>
+<li>橄榄油</li>
+<li>牛奶<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3></li>
+<li>先将胡萝卜西芹、切丁，洋葱切碎</li>
+<li>橄榄油烧热，下洋葱炒到透明</li>
+<li>下胡萝卜和西芹炒热</li>
+<li>下牛肉碎，炒到变色</li>
+<li>加入番茄酱，拌匀，亦可加点酒去腥</li>
+<li>然后倒牛奶，边倒边拌匀</li>
+<li>盖上盖子小火煮3-4小时，中途可以加上牛奶补充汤汁</li>
+<li>酱快好的时候开始煮水，加入一定量盐和意面，5-7min</li>
+<li>拿口炒锅，将橄榄油、奶酪和意面炒匀，炒的时候可以加一勺刚刚才烧面的用的盐水来湿润</li>
+<li>炒完淋上酱汁（Ragu）就可以吃啦！</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>http://yoursite.com/2016/08/10/hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    </entry>
+    
+  
+  
+</search>
