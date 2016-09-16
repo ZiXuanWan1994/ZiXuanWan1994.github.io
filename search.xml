@@ -78,16 +78,16 @@
   
     
     <entry>
+      <title><![CDATA[��ǩ]]></title>
+      <url>http://yoursite.com/categories/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[about]]></title>
       <url>http://yoursite.com/about/index.html</url>
       <content type="html"><![CDATA[<p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=425053013&auto=1&height=66"></iframe>暂时就把外链歌曲放在这。 我什么也没有，这页就不写了。</p>
 ]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[��ǩ]]></title>
-      <url>http://yoursite.com/categories/index.html</url>
-      <content type="html"></content>
     </entry>
     
     <entry>
