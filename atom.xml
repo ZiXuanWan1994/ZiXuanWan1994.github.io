@@ -67,7 +67,7 @@
     <link href="http://yoursite.com/2016/08/28/%E8%B4%A6%E5%8D%95/"/>
     <id>http://yoursite.com/2016/08/28/账单/</id>
     <published>2016-08-27T17:48:11.283Z</published>
-    <updated>2016-09-15T05:39:15.975Z</updated>
+    <updated>2016-12-07T13:18:35.406Z</updated>
     
     <content type="html"><![CDATA[<h2 id="9月份"><a href="#9月份" class="headerlink" title="9月份"></a>9月份</h2><hr>
 <table>
@@ -80,7 +80,7 @@
 <tbody>
 <tr>
 <td>日常用品</td>
-<td>$120</td>
+<td>$130</td>
 </tr>
 <tr>
 <td>出行</td>
@@ -88,11 +88,11 @@
 </tr>
 <tr>
 <td>吃饭</td>
-<td>$356</td>
+<td>$405</td>
 </tr>
 <tr>
 <td>饮料</td>
-<td>101</td>
+<td>126</td>
 </tr>
 <tr>
 <td>网费</td>
@@ -100,7 +100,7 @@
 </tr>
 <tr>
 <td>香烟</td>
-<td>128</td>
+<td>188</td>
 </tr>
 <tr>
 <td>实习伙食费</td>
@@ -113,6 +113,10 @@
 <tr>
 <td>话费</td>
 <td>50</td>
+</tr>
+<tr>
+<td>班级聚餐</td>
+<td>100</td>
 </tr>
 </tbody>
 </table>
@@ -134,6 +138,70 @@
     
       <category term="日常" scheme="http://yoursite.com/categories/%E6%97%A5%E5%B8%B8/"/>
     
+    
+  </entry>
+  
+  <entry>
+    <title>仪器响应的物理细节</title>
+    <link href="http://yoursite.com/2013/06/26/2013-06-26-physical-details-of-instrumental-response/"/>
+    <id>http://yoursite.com/2013/06/26/2013-06-26-physical-details-of-instrumental-response/</id>
+    <published>2013-06-25T16:00:00.000Z</published>
+    <updated>2017-05-29T11:00:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>地震波的传播会引起地面运动。用来表征地面运动的物理量有很多，常见的有速度和加速度，不太常见的还有位移、<br>应变、旋转。这些物理量在被地震仪接收到之后，首先要将其转换为电信号，然后对电信号振幅进行放大以及滤波，<br>再将连续时间序列离散化，最终以我们常见的波形的形式表现出来。</p>
+<a id="more"></a>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>概括地说，这个过程分为三个阶段：</p>
+<ol>
+<li>Analog Stages</li>
+<li>Analog-Digital Converter</li>
+<li>Digital Stages</li>
+</ol>
+<p>地震仪的仪器响应是频率的复数函数，也就是常说的振幅响应和频率响应。上面提到的三个阶段，每个阶段的响<br>应函数都是频率的复数函数，表示为 $G_i(f)$，整个仪器的响应函数是各个阶段响应函数的乘积：</p>
+<p>$$G(f)=\prod_i G_i(f)$$</p>
+<h2 id="预备知识"><a href="#预备知识" class="headerlink" title="预备知识"></a>预备知识</h2><h3 id="FIR滤波器"><a href="#FIR滤波器" class="headerlink" title="FIR滤波器"></a>FIR滤波器</h3><p>信号处理没学好，不敢瞎说，姑且翻译重点部分。简单地说，<a href="https://zh.wikipedia.org/wiki/有限冲激响应" target="_blank" rel="external">FIR滤波器</a><br>就是对一些数据采样点做加权平均，设计不同的加权系数就得到不同的FIR滤波器。FIR滤波器一般设计为振幅响应<br>为方阶跃函数（boxcar），因而其在通带内有较平的振幅响应，在拐角频率处有很尖锐很陡峭的振幅响应变化<br>（一般拐角频率设置为Nyquist频率的70%-90%）。与此同时，滤波器具有线性相位，即具有类似<br>$e^{i \omega t}$的形式，这个线性相位在时间域代表信号的时间延迟，一般数据采集系统会对这个时间延迟<br>做校正。由此，用户基本不需要考虑FIR滤波器对仪器响应的影响。</p>
+<h3 id="响应函数"><a href="#响应函数" class="headerlink" title="响应函数"></a>响应函数</h3><p>模拟信号的响应函数用Laplace变换表示：</p>
+<p>$$H(s)=\int_0^{\infty}h(t)e^{-st}dt$$</p>
+<p>数字信号的响应函数用Z变换表示：</p>
+<p>$$H(z)=\sum_{-\infty}^{+\infty}h_m z^{-m}$$</p>
+<h3 id="归一化"><a href="#归一化" class="headerlink" title="归一化"></a>归一化</h3><p>频率响应可以表示为</p>
+<p>$$G(f)=S_d R(f)$$</p>
+<p>其中 $R(f)$ 是频率的函数。在某个特定的频率 $f_s$，有 $|R(f_s)|=1.0$ ，即 $R(f)$ 在频率 $f_s$<br>处进行归一化。$S_d$ 是放大系数，也称为Sensitivity或者Gain。</p>
+<p>$R(f)$ 可以表示为</p>
+<p>$$R(f)=A_0 H_p(s)$$</p>
+<p>其中 $H_p(s)$ 是用零极点表示的transfer函数，一般来说在频率$f_s$处这个transfer函数的振幅响应<br>不为1，所以需要归一化因子 $A_0$。</p>
+<h2 id="Analog-Stages"><a href="#Analog-Stages" class="headerlink" title="Analog Stages"></a>Analog Stages</h2><p>这个阶段的主要功能是将连续的地面运动物理量（比如速度）转换为电压信号，并进行电压放大。因而这个阶段的<br>输入单位是 <code>m/s</code>，输出单位是伏特(V)。这个阶段的响应函数可以表示为</p>
+<p>$$G(f)=S_d A_0 \frac{\prod (s-r_n)}{\prod (s-p_m)}=S_d A_o H_p(s)$$</p>
+<p>如前所说，$S_d$ 是放大系数，$H_p(s)$ 是用零极点表示的transfer函数，这里n和m代表n个零点和m个极点。<br>$A_0$ 是归一化因子。</p>
+<h2 id="Analog-Digital-Converter"><a href="#Analog-Digital-Converter" class="headerlink" title="Analog-Digital Converter"></a>Analog-Digital Converter</h2><p>模电转换器，将上个阶段产生的连续的电压信号转换为离散的电压信号。输入的单位是伏特V，输出单位是counts。<br>（不了解A/D C的细节，大概就是说在离散的时候存在一个非常小的阀值，这个值是离散信号所能识别的最小电压差。）<br>这个过程中，其在所有频段内振幅响应相同，也就是只存在一个放大系数，同时可能存在一个时间延迟。</p>
+<h2 id="Digital-Stages"><a href="#Digital-Stages" class="headerlink" title="Digital Stages"></a>Digital Stages</h2><p>这个阶段对离散数据进行处理。这个过程包含了三个小部分：离散信号滤波，数据重采样，校正滤波引入的时间延迟。</p>
+<p>离散信号滤波可以采用FIR滤波器，也可以采用IIR滤波器。多数情况下采用FIR滤波器，这意味着这个阶段只需要<br>考虑放大系数 $S_d$，归一化因子 $A_0$ 不需要考虑，或者可以认为其为1.0。同样，对于数据重采样以及时间校正<br>也不会引入新的响应函数。</p>
+<p>说明：FIR滤波器的响应函数可以近似认为其振幅恒为1，实际情况下，在Nyquist采样率附近会有5%左右的震荡。<br>因而当感兴趣的频率比Nyquist频率小很多时可以不必考虑FIR滤波器的响应函数。</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>综上所述，三个阶段中，第一个阶段最为复杂，需要给出放大系数 $S_{d1}$、归一化因子 $A<em>0$ 以及<br>多个零极点；第二个阶段以及第三个阶段都只需要给出放大系数 $S</em>{d2}$ 和 $S_{d3}$。时间校正由数据<br>采集系统自动完成（mark一下，这话说得没底气）。</p>
+<p>最终得到仪器的响应函数为</p>
+<p>$$G(f)=S_{d1} A_0 H<em>p(s) S</em>{d2} S<em>{d3} = S</em>{d0} A_o H_p(s)$$</p>
+<p>即需要仪器在第一个阶段的零极点信息、归一化因子 $A<em>o$ 以及全部三个阶段的放大系数 $S</em>{d0}$ 即可以<br>完全表示地震仪的仪器响应。</p>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>这里描述的是一些基本物理细节，应该足够理解仪器响应。想要了解更多的细节，可以看参考中给出的SEED Reference Manual的指定页。</li>
+</ol>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol>
+<li><a href="http://www.fdsn.org/seed_manual/SEEDManual_V2.4.pdf" target="_blank" rel="external">SEED Reference Manual</a>, Version 2.4, August 2012, P71-P78, P151-169</li>
+<li><a href="http://www.iris.edu/hq/es_course/content/2009.html" target="_blank" rel="external">EarthScope 2009 workshop</a> session2</li>
+</ol>
+<h2 id="修订历史"><a href="#修订历史" class="headerlink" title="修订历史"></a>修订历史</h2><ul>
+<li>2013-06-26：初稿。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;地震波的传播会引起地面运动。用来表征地面运动的物理量有很多，常见的有速度和加速度，不太常见的还有位移、&lt;br&gt;应变、旋转。这些物理量在被地震仪接收到之后，首先要将其转换为电信号，然后对电信号振幅进行放大以及滤波，&lt;br&gt;再将连续时间序列离散化，最终以我们常见的波形的形式表现出来。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="地震学基础" scheme="http://yoursite.com/categories/%E5%9C%B0%E9%9C%87%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="仪器响应" scheme="http://yoursite.com/tags/%E4%BB%AA%E5%99%A8%E5%93%8D%E5%BA%94/"/>
     
   </entry>
   
